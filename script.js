@@ -98,7 +98,7 @@ function startGame() {
     const heart = document.createElement("div");
     heart.classList.add("poto");
 
-    const isBomb = Math.random() < 0.8;
+    const isBomb = Math.random() < 0.6;
 
     if (isBomb) {
       heart.innerHTML = `<img src="bom.png" class="bomimg">`;
@@ -134,7 +134,7 @@ function startGame() {
       document.getElementById("score").innerText = score + " / 5";
 
       // MENANG
-      if (score >= 1) {
+      if (score >= 5) {
         gameOver = true;
         clearInterval(gameInterval);
 
@@ -190,6 +190,7 @@ function salah() {
     alert("Kamu masi ragu?");
     alert("tanya orangnya atuh unggerr 🤪")
   }
+
 
 
 
