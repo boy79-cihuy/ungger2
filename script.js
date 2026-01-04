@@ -98,7 +98,7 @@ function startGame() {
     const heart = document.createElement("div");
     heart.classList.add("poto");
 
-    const isBomb = Math.random() < 0.6;
+    const isBomb = Math.random() < 0.7;
 
     if (isBomb) {
       heart.innerHTML = `<img src="bom.png" class="bomimg">`;
@@ -190,6 +190,7 @@ function salah() {
     alert("Kamu masi ragu?");
     alert("tanya orangnya atuh unggerr 🤪")
   }
+
 
 
 
